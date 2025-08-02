@@ -1,0 +1,48 @@
+/* .main-laptop-div{
+    height:fit-content ;
+    
+}
+.laptop-div-box{
+    display: flex;
+    justify-content:space-between;
+    
+flex-wrap: wrap;
+}
+.laptop-output-div{
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    height: 350px;
+    width:400px;
+    margin-left: 20px;
+    padding: 50px;
+    margin-top: 20px;
+    border-radius: 30px;
+}
+.laptop-details{
+
+}
+.laptop-images{
+    height: 100px;
+    width: 100px;
+}
+.laptop-images  img{
+height: 100px;
+    width: 100px;
+}
+ */
+.main-laptop-div{
+    height: fit-content;
+    display: flex;
+    justify-content: space-around;
+    
+    
+}
+
+
+
+#output-div{
+    
+    float: right;
+    
+}

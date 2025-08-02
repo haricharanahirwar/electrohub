@@ -1,0 +1,19 @@
+.main-wearables-div{
+    height: fit-content;
+    display: flex;
+    justify-content: space-around;
+    
+    
+}
+.row{
+    display: flex;
+    justify-content: space-around;
+    margin-right: 10px;
+}
+
+
+#output-div{
+    
+    float: right;
+    
+}

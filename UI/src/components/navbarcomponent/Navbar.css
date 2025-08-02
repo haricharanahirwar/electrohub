@@ -1,0 +1,13 @@
+.login-register-div{
+    display: flex;
+    justify-content: flex-end;
+}
+.login-register-div a{
+    text-decoration: none;
+    color: white;
+  margin: 12px;
+}
+.search-box{
+  width: 250px;
+  height: 20px;
+}

@@ -1,0 +1,376 @@
+  * {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  .top-container {
+    height: 60px;
+    background-color: #046a38;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    /* position: sticky;
+    top: 0px; */
+    z-index: 10;
+  }
+
+  #top-exchange-offer {
+    margin-left: 10px;
+  }
+
+  #Unlock-now {
+    margin-left: 100px;
+  }
+
+  #close-button {
+    font-size: bold;
+    margin-right: 5px;
+  }
+
+  #close-button {
+    height: 14px;
+    width: 14px;
+    color: white;
+
+  }
+
+  #Unlock-now {
+    color: white;
+  }
+
+  .top-second {
+    display: flex;
+    justify-content: end;
+  }
+  #shoping-bag:hover{
+    background-image: url(./oppoqrcode.jpg,);
+      
+  }
+
+  .main-container {
+    height: fit-content;
+    padding: 10px;
+    padding-bottom: 20px;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+  }
+
+  .nab-box {
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 15px;
+    font-size: 18px;
+  }
+
+  .nab-box a {
+    text-decoration: none;
+    color: #000000;
+  }
+
+  .main-hero-section {
+    width: 100%;
+    height: 500px;
+  }
+
+  .search-box {
+    border-radius: 20px;
+    text-align: center;
+  }
+
+  .hero-section-top {
+    height: 496px;
+    width: 100%;
+    animation: hari 16s ease-in 2s infinite;
+    background-image: url(/assets/images/oppoimage.jpg);
+    background-size: 100% 100%;
+    background-image: cover;
+
+  }
+ 
+  @keyframes hari {
+    0% {
+      background-image: url(/assets/images/image1.jpg);
+    }
+
+    25% {
+      background-image: url(/assets/images/image2.jpg);
+    }
+
+    50% {
+      background-image: url(/assets/images/image3.jpg);
+    }
+
+    75% {
+      background-image: url(/assets/images/image44.jpg);
+    }
+
+    100% {
+      background-image: url(/assets/images/image5.jpg);
+    }
+
+  }
+
+  .hero-options {
+    display: flex;
+    height: 60px;
+    flex-direction: row;
+    justify-content: space-around;
+    color: #828282;
+    background-color: #c9e6ff;
+    align-items: center;
+
+  }
+
+  .hero-options a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 18px;
+  }
+
+  .second-hero-option {
+    height: 200px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    background-color: #c9e6ff;
+    margin: 50px 200px;
+
+  }
+
+  .second-hero-option a {
+    text-decoration: none;
+    margin: 10px 20px;
+    font-size: 24px;
+    color: #828282;
+  }
+
+  #Exchange-Now {
+    height: 40px;
+    width: 150px;
+    background-color: black;
+    border-radius: 40px;
+    text-align: center;
+    font-size: 18px;
+    color: #828282;
+  }
+  /*oppp support section start*/
+  .oppo-support-section{
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    align-items: center;
+  }
+  #Support{
+    font-size: 24px;
+    padding: 50px;
+    align-items: center;
+  }
+  .support-section-child{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .support-section-child a{
+    text-decoration: none;
+    color: black;
+    margin: 20px;
+    margin-right: 100px;
+    width: 100%;
+
+  }
+  /*footer section start*/
+  .footer-section{
+    height: 750px;
+    background-color: black;
+    color: #c9e6ff;
+  }
+  .main-div-footer
+{
+  height: 550px;
+  display: flex;
+  padding: 20px;
+}
+.footer-child-one{
+  height: 400px;
+  width: 212px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+align-items: center;
+  
+}
+.footer-child-one p{
+  font-weight: bolder;
+  color: white;
+  font-weight: bold;
+  align-items: center;
+  width: 100%;
+}
+.footer-child-one a{
+  width: 80%;
+color:#ffffff8c;
+list-style: none;
+text-decoration: none;
+justify-content: start;
+margin: 5px;
+}
+  
+
+.footer-child-two{
+  height: 400px;
+  width: 212px;
+  display: flex;
+flex-direction: column;
+justify-content: start;
+align-items: center;
+}
+.footer-child-two a{
+  text-decoration: none;
+  color:#ffffff8c;
+  width: 80%;
+  margin: 10px;
+}
+.footer-child-two p{
+ font-weight: bold;
+ color: white;
+ margin-top: 4px;align-items: center;
+ width: 100%;
+}
+.footer-child-three{
+  height: 400px;
+  width: 212px;
+  display: flex;
+flex-direction: column;
+justify-content: start;
+align-items: center;
+}
+.footer-child-three p{
+color: white;
+font-weight: bold;
+margin-top: 4px;
+}
+.footer-child-three a{
+  text-decoration: none;
+  color: #ffffff8c;
+  margin: 10px;
+}
+.footer-child-four{
+  height: 400px;
+  width: 212px;
+  display: flex;
+flex-direction: column;
+justify-content: start;
+align-items: center;
+}
+.footer-child-four p{
+  color: white;
+  font-weight: bold;
+}
+.footer-child-four a{
+  text-decoration: none;
+  color: #ffffff8c;
+  width: 80%;
+  margin: 10px;
+}
+.footer-child-five{
+  height: 400px;
+  width: 212px;
+  display: flex;
+flex-direction: column;
+justify-content: start;
+align-items: center;  
+}
+.footer-child-five p{
+  color:white;
+  font-weight: bold;
+}
+.footer-child-five a{
+text-decoration: none;
+color: #ffffff8c;
+margin: 10px;
+}
+.footer-child-six{
+  height: 400px;
+  width: 212px;
+  display: flex;
+flex-direction: column;
+justify-content: start;
+align-items: center;
+}
+.footer-child-six{
+color: white;
+font-weight: bold;
+}
+.footer-child-six a{
+color: #ffffff8c;
+text-decoration: none;
+margin: 10px;
+}
+/*second-footer div-start*/
+.second-footer-main-div{
+  border: 0.1px solid white;
+  margin-top: ;
+  height: 106px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.second-footer-main-div a{
+  color: #ffffff8c;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px;
+  margin-left: 10px;
+}
+.demo{
+  
+  width: 24px;
+  padding: 20px;
+ }
+ .right-child i
+{
+  color: white;
+}
+.india-langauge-option{
+  display: flex;
+  justify-content: flex-end;
+}
+.india-langauge-option a{
+  color: #ffffff8c;
+  align-items: end;
+}
+
+.third-footer-main-div{
+  display: flex;
+  justify-content: start;
+
+}
+.third-footer-main-div a{
+text-decoration: none;
+color:#ffffff8c;
+margin: 20px;
+font-size: 14px;
+}
+.third-footer-right-div{
+  display: flex;
+  justify-content: right;
+  margin-left: 150px;
+}
+.third-footer-right-div a{
+  text-decoration: none;
+  color: #ffffff8c;
+  font-size: 14px;
+  
+}
