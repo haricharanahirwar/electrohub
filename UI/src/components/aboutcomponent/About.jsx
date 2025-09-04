@@ -11,7 +11,7 @@ function About() {
         <div className="row justify-content-center">
           <div className="col-md-4 mb-4">
             <div className="card h-100 shadow-sm">
-              <img src="assets/images/harry3.jpg" className="card-img-top" alt="Founder" />
+              <img src="assets/images/harri-image.jpg" className="card-img-top" alt="Founder" />
               <div className="card-body">
                 <h5 className="card-title">Harry Rathore</h5>
                 <p className="card-text">CEO</p>

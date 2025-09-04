@@ -192,7 +192,8 @@
   }
   /*footer section start*/
   .footer-section{
-    height: 750px;
+    height: fit-content;
+    /* height: 750px; */
     background-color: black;
     color: #c9e6ff;
   }

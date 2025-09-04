@@ -1,54 +1,74 @@
 .about-us {
+  background: linear-gradient(135deg, #f9fcff, #eef7ff);
   padding: 60px 20px;
-  background-color: #f9f9f9;
-  text-align: center;
-}
-
-.about-us .container {
-  max-width: 1000px;
-  margin: 0 auto;
 }
 
 .about-us h2 {
   font-size: 2.5rem;
-  margin-bottom: 20px;
-  color: #333;
+  font-weight: 700;
+  color: #0a3d91;
 }
 
-.about-us p {
-  font-size: 1.1rem;
+.about-us p.lead {
+  font-size: 1.2rem;
   color: #555;
-  margin-bottom: 40px;
+  max-width: 800px;
+  margin: 0 auto 40px;
+  line-height: 1.8;
 }
 
-.team {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  flex-wrap: wrap;
+.card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.team-member {
-  background-color: #fff;
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top {
+  height: 280px;
+  object-fit: cover;
+}
+
+.card-body {
+  background: #fff;
   padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  width: 220px;
 }
 
-.team-member img {
+.card-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #0a3d91;
+}
+
+.card-text {
+  font-size: 1.1rem;
+  color: #444;
+}
+.card-img-top {
   width: 100%;
-  height: 250px;
-  border-radius: 20%;
-  margin-bottom: 15px;
+  height: 280px;        /* fixed height */
+  object-fit: cover;    /* crop & cover */
+  object-position: center; /* center crop */
+  border-bottom: 1px solid #eee;
 }
 
-.team-member h3 {
-  margin: 10px 0 5px;
-  color: #222;
+.card-img-top img{
+  width: 100%;
+  height: 100%;
 }
 
-.team-member p {
-  color: #777;
-  font-size: 0.95rem;
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .about-us h2 {
+    font-size: 2rem;
+  }
+
+  .card-img-top {
+    height: 220px;
+  }
 }

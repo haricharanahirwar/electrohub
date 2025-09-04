@@ -1,0 +1,68 @@
+/* 🔹 Section Container */
+.benefit-section {
+  background: #f9fcff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* 🔹 Top Links */
+.hero-options {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.hero-options a {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #0a3d91;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  cursor: pointer;   /* 🔹 so it looks clickable */
+}
+
+.hero-options a:hover {
+  background: #0af;
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+/* 🔹 Second Row (Flexbox) */
+.second-hero-option {
+  background: linear-gradient(135deg, #e8f0ff, #d4ecff);
+  border-radius: 15px;
+  padding: 30px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 900px;
+  margin: 0 auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.benefit-text h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #1a1a1a;
+}
+
+.benefit-text p {
+  font-size: 1.2rem;
+  color: #444;
+  margin: 0;
+}
+
+/* 🔹 CTA Button */
+#Exchange-Now {
+  background: #0af;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  bo

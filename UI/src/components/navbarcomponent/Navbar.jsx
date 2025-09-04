@@ -12,7 +12,7 @@ function Navbar() {
           <div className="bg-dark text-white py-2 d-flex justify-content-between align-items-center px-4">
             <p className="mb-0">Official Exchange Bonus & 4 More Benefits</p>
             <div>
-              <a href="#" className="text-warning me-3">Unlock now</a>
+             
               <Link to="/logout" className="btn btn-outline-light btn-sm me-2">Logout</Link>
             </div>
           </div>
@@ -63,7 +63,7 @@ function Navbar() {
           <div className="bg-dark text-white py-2 d-flex justify-content-between align-items-center px-4">
             <p className="mb-0">Official Exchange Bonus & 4 More Benefits</p>
             <div>
-              <a href="#" className="text-warning me-3">Unlock now</a>
+              
               <Link to="/logout" className="btn btn-outline-light btn-sm me-2">Logout</Link>
              
             </div>
@@ -117,7 +117,7 @@ function Navbar() {
           <div className="bg-dark text-white py-2 d-flex justify-content-between align-items-center px-4">
             <p className="mb-0">Official Exchange Bonus & 4 More Benefits</p>
             <div>
-              <a href="#" className="text-warning me-3">Unlock now</a>
+             
               <Link to="/Register" className="btn btn-outline-light btn-sm me-2">Register</Link>
               <Link to="/login" className="btn btn-outline-light btn-sm">Login</Link>
             </div>

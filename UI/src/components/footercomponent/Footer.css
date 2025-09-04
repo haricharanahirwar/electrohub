@@ -1,3 +1,98 @@
-.second-footer-main-div{
-    
+.footer-section {
+  background: #0f0f0f;
+  color: #d9d9d9;
+  padding: 50px 30px;
+  font-size: 16px;   /* 🔹 Increased font size */
+  line-height: 1.8;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* 🔹 Top Grid */
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.footer-grid h4 {
+  color: #fff;
+  margin-bottom: 12px;
+  font-size: 18px;  /* bigger heading */
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.footer-grid a {
+  display: block;
+  color: #bbb;
+  text-decoration: none;
+  margin: 6px 0;
+  transition: all 0.3s ease;
+}
+
+.footer-grid a:hover {
+  color: #fff;
+  transform: translateX(5px); /* stylish hover */
+}
+
+/* 🔹 Middle Section */
+.footer-middle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #333;
+  padding: 20px 0;
+  flex-wrap: wrap;
+  font-size: 15px;
+}
+
+.footer-middle i {
+  font-size: 20px;
+  margin-right: 12px;
+  transition: color 0.3s ease;
+}
+
+.footer-middle i:hover {
+  color: #0af;
+}
+
+.social-links span {
+  margin-left: 15px;
+  font-size: 15px;
+  color: #eee;
+}
+
+/* 🔹 Bottom Section */
+.footer-bottom {
+  border-top: 1px solid #333;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 15px;
+  color: #aaa;
+}
+
+.footer-bottom .links a {
+  margin-right: 20px;
+  color: #bbb;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-bottom .links a:hover {
+  color: #fff;
+}
+
+.footer-bottom .back-to-top {
+  color: #0af;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-bottom .back-to-top:hover {
+  color: #08f;
 }
