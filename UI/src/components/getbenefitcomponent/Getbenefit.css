@@ -1,68 +1,96 @@
-/* 🔹 Section Container */
+/* Getbenefit.css */
+
 .benefit-section {
-  background: #f9fcff;
-  padding: 40px 20px;
-  text-align: center;
+  width: 100%;
+  padding: 2rem;
+  background: #f8f9fa; /* light background */
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
-/* 🔹 Top Links */
+/* 🔹 First Row */
 .hero-options {
   display: flex;
   justify-content: center;
-  gap: 25px;
   flex-wrap: wrap;
-  margin-bottom: 30px;
+  gap: 1rem;
 }
 
 .hero-options a {
-  font-size: 1.1rem;
-  font-weight: 500;
-  color: #0a3d91;
-  text-decoration: none;
-  padding: 8px 16px;
-  border-radius: 25px;
-  transition: all 0.3s ease;
-  cursor: pointer;   /* 🔹 so it looks clickable */
+  padding: 0.6rem 1.2rem;
+  /* background: #08f; */
+  color: white;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  transition: 0.3s ease;
 }
 
-.hero-options a:hover {
-  background: #0af;
-  color: #fff;
-  transform: translateY(-3px);
-}
 
-/* 🔹 Second Row (Flexbox) */
+/* 🔹 Second Row */
 .second-hero-option {
-  background: linear-gradient(135deg, #e8f0ff, #d4ecff);
-  border-radius: 15px;
-  padding: 30px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
-  max-width: 900px;
-  margin: 0 auto;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  flex-wrap: wrap; /* allow wrapping on small screens */
+  gap: 1rem;
 }
 
 .benefit-text h2 {
-  font-size: 1.8rem;
-  font-weight: 600;
-  margin-bottom: 8px;
-  color: #1a1a1a;
-}
-
-.benefit-text p {
-  font-size: 1.2rem;
-  color: #444;
+  font-size: 1.5rem;
   margin: 0;
 }
 
-/* 🔹 CTA Button */
+.benefit-text p {
+  font-size: 1rem;
+  color: #555;
+}
+
 #Exchange-Now {
-  background: #0af;
-  color: #fff;
+  padding: 0.8rem 1.5rem;
   border: none;
-  padding: 12px 24px;
-  font-size: 1.1rem;
-  bo
+  background:  #0af;
+  color: white;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#Exchange-Now:hover {
+  background: #1e7e34;
+}
+
+/* 🔹 Responsive Styles */
+@media (max-width: 768px) {
+  .second-hero-option {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  #Exchange-Now {
+    width: 100%; /* full-width button on mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-options a {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .benefit-text h2 {
+    font-size: 1.2rem;
+  }
+
+  .benefit-text p {
+    font-size: 0.9rem;
+  }
+}
