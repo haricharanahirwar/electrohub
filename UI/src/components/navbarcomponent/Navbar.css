@@ -11,3 +11,44 @@
   width: 250px;
   height: 20px;
 }
+/* Ensure navbar links adjust on smaller screens */
+.navbar-nav .nav-link {
+  padding: 8px 12px;
+  font-size: 15px;
+}
+
+/* Search input responsiveness */
+.navbar .form-control {
+  max-width: 200px;
+}
+
+@media (max-width: 992px) {
+  .navbar .form-control {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .navbar .d-flex {
+    margin-top: 10px;
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* Top banner responsiveness */
+.bg-dark p {
+  font-size: 14px;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+@media (max-width: 576px) {
+  .bg-dark {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .bg-dark div {
+    margin-top: 8px;
+  }
+}
