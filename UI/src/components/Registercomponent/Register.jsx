@@ -14,6 +14,7 @@ function Register() {
   const [output, setOutput] = useState("");
 
   const handleSubmit = () => {
+  
     const userDetails = {
       name:name,
       email:email,
@@ -22,11 +23,9 @@ function Register() {
       address:address,
       gender:gender,
       city:city,
+  
     };
-    console.log("User Details:");
-    
-
-    axios.post(__userapiurl+'save', userDetails)
+       axios.post(__userapiurl+'save', userDetails)
       .then(() => {
         setName("");
         setEmail("");
@@ -40,6 +39,7 @@ function Register() {
       .catch(() => {
         setOutput("User Registration Failed");
       });
+    
   };
   
 
@@ -94,7 +94,7 @@ function Register() {
             Female <input type="radio" name="gender" value="Female" checked={gender === "Female"} onChange={(e) => setGender(e.target.value)} />
           </div>
 
-          <button  className="btn bg-primary text-white w-100" onClick={handleSubmit}>
+          <button  className="btn bg-primary text-white w-100" type="button"onClick={handleSubmit}>
             Submit
           </button>
         </form>

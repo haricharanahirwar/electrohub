@@ -1,7 +1,7 @@
 import express from 'express';
 import path from 'path';
 import bodyParser from 'body-parser';
-import cors from 'cors';
+import cors from "cors"
 import fileUpload from 'express-fileupload'
 
 const app = express();
@@ -18,7 +18,7 @@ app.use(bodyParser.urlencoded({extended:true}));
 //configuration to resolve cross origin problem
 app.use(cors());
 
-app.use(fileUpload);
+app.use(fileUpload());
 //router level middleware to link routers
 app.use("/user",UserRouter);
 app.use("/category",CategoryRouter);

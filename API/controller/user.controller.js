@@ -5,21 +5,38 @@ import rs from "randomstring";
 
 import UserSchemaModel from "../models/user.model.js";
 
-export const save = async (req, res) => {
-  const users = await UserSchemaModel.find({ "role": "user" });
-  const l = users.length;
-  const _id = l == 0 ? 1 : users[l - 1]._id + 1;
 
-  const userDetails = { ...req.body, '_id': _id, 'status': 0, role: 'user', info: Date() };
-  console.log("data");
-  try {
+// export const save = async (req, res) => {
+//   const users = await UserSchemaModel.find({ "role": "user" });
+//   const l = users.length;
+//   const _id = l == 0 ? 1 : users[l - 1]._id + 1;
+
+//   const userDetails = { ...req.body, '_id': _id, 'status': 1, role: 'user', info: Date() };
+//   console.log("user details", userDetails);
+//   try {
+//     await UserSchemaModel.create(userDetails);
+//     res.status(201).json({ "status": true });
+//   }
+//   catch {
+//     res.status(500).json({ "status": false });
+//     console.log(error, "api error,internal server error")
+//   }
+// };
+
+export const save =async(req,res)=>{
+ const users = await UserSchemaModel.find();
+ const l=users.length;
+ const _id=l==0?1:users[l-1]._id+1;
+ const userDetails={...req.body,'_id':_id,'status':1,role:'user',info:Date()};
+ console.log(userDetails);
+ try{
     await UserSchemaModel.create(userDetails);
-    res.status(201).json({ "status": true });
-  }
-  catch {
-    res.status(500).json({ "status": false });
-     console.log(error)
-  }
+    res.status(201).json({"status":true});
+ }
+ catch{
+    res.status(500).json({"status":false});
+    console.log(error)
+ }
 };
 
 export const fetch = async (req, res) => {

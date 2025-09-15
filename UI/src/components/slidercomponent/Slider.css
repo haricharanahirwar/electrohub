@@ -16,7 +16,7 @@
   font-size: 3rem;
   font-weight: bold;
   margin-bottom: 15px;
-  color: white; /* visible on dark bg */
+  color:#181823; /* visible on dark bg */
 }
 
 .hero-option p {
@@ -25,7 +25,7 @@
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
-  color: #eee; /* light gray for readability */
+  color: #181823; /* light gray for readability */
 }
 
 .hero-btn {
